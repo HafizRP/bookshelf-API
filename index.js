@@ -1,6 +1,7 @@
 import express from "express"
 import fs from 'fs'
 import { body, check, validationResult } from 'express-validator'
+import { nanoid } from 'nanoid'
 
 const db = JSON.parse(fs.readFileSync('./books.json', 'utf-8'))
 const app = express()
@@ -24,9 +25,8 @@ app.post('/books', body('name').custom(value => {
         const errors = validationResult(req)
 
         if (!errors.isEmpty()) return res.status(400).send({ status: "failed", data: errors })
-
         const { name, year, author, summary, publisher, pageCount, readPage, reading } = req.body
-        const data = { name: name, year: year, author: author, summary: summary, publisher: publisher, pageCount: pageCount, readPage: readPage, reading: reading }
+        const data = { id: nanoid(), name: name, year: year, author: author || null, summary: summary, publisher: publisher, pageCount: pageCount, readPage: readPage, reading: reading }
 
         db.push(data)
 
