@@ -1,26 +1,16 @@
 [
-  {
-    "id": "MbJyg6dVLYIV14hEHxPgJ",
-    "name": "Hulla"
-  },
-  {
-    "id": "1QrKVRLzIZhxOPKDeCSQQ",
-    "name": "Hulla"
-  },
-  {
-    "id": "gpVuV3R4rAefFqmNTm4Vp",
-    "name": "Hulla"
-  },
-  {
-    "id": "iEEyQv2cYg61CePMMBCB2",
-    "name": "Hulla"
-  },
-  {
-    "id": "hvtX1dJPh9o84wHOnW09f",
-    "name": "Hulla"
-  },
-  {
-    "id": "ooBRX9PTAghsm54Ct-jG3",
-    "name": "Hulla"
-  }
+    {
+        "id": "bq64prNHXYgSAMPBQWo2H",
+        "name": "The Truth of Proggramming World",
+        "year": "2022",
+        "author": "Hafiz",
+        "summary": "Describing how proggramming world is",
+        "publisher": "Gramedia",
+        "pageCount": 201,
+        "readPage": 9,
+        "reading": false,
+        "finished": false,
+        "insertedAt": "2022-08-10T02:55:15.619Z",
+        "updatedAt": "2022-08-10T02:55:15.619Z"
+    }
 ]
